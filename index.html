@@ -11,6 +11,7 @@
     <!-- Bootstrap 5 CSS (CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="FAQ.css" rel="stylesheet">
+    <script src="translate.js"></script>
 
   </head>
   <body>
@@ -28,23 +29,28 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-            <li class="nav-item"><a class="nav-link" href="#visit">Visit Us</a></li>
-            <li class="nav-item"><a class="btn btn-outline-primary ms-2" href="#contact">Contact</a></li>
-          </ul>
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+  <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+  <li class="nav-item"><a class="nav-link" href="#visit">Visit Us</a></li>
+  <li class="nav-item"><a class="btn btn-outline-primary ms-2" href="#contact">Contact</a></li>
+  <li class="nav-item">
+    <button id="translateBtn" class="btn btn-sm btn-outline-secondary ms-2">中文 / English</button>
+  </li>
+</ul>
+
         </div>
       </div>
     </nav>
-    <header class="hero py-5">
-      <div class="hero-overlay py-5">
-        <div class="container py-5 text-center">
-          <h1 class="display-6 fw-bold">Lantern Brew — Frequently Asked Questions</h1>
-          <p class="lead mt-2">Everything you need to know about our coffee, ordering options, and our Hong Kong locations.</p>
-          <a href="#faq" class="btn btn-lg btn-light mt-3">Jump to FAQ</a>
-        </div>
-      </div>
-    </header>
+<header class="hero py-5">
+  <div class="hero-overlay py-5">
+    <div class="container py-5 text-center">
+      <h1 class="display-6 fw-bold" data-key="heroTitle">Lantern Brew — Frequently Asked Questions</h1>
+      <p class="lead mt-2" data-key="heroDesc">Everything you need to know about our coffee, ordering options, and our Hong Kong locations.</p>
+      <a href="#faq" class="btn btn-lg btn-light mt-3" data-key="jumpToFAQBtn">Jump to FAQ</a>
+    </div>
+  </div>
+</header>
+
 
     <main class="container my-5">
       <div class="row gy-4">
@@ -57,75 +63,73 @@
 
               <div class="accordion" id="faqAccordion">
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Do you offer plant-based milk alternatives?
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                      Yes — we carry oat, almond, and soya milk. All substitutions are +HK$6. Ask our barista for allergy details; cross-contact with dairy is possible.
-                    </div>
-                  </div>
-                </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-key="faqQ1">
+        Do you offer plant-based milk alternatives?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+      <div class="accordion-body" data-key="faqA1">
+        Yes — we carry oat, almond, and soya milk. All substitutions are +HK$6. Ask our barista for allergy details; cross-contact with dairy is possible.
+      </div>
+    </div>
+  </div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Where are you located in Hong Kong?
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                      Our flagship store is in Central (Lan Kwai Fong). We also have a pop-up in Mong Kok on weekends. See the Visit section for hours and directions.
-                    </div>
-                  </div>
-                </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" data-key="faqQ2">
+        Where are you located in Hong Kong?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+      <div class="accordion-body" data-key="faqA2">
+        Our flagship store is in Central (Lan Kwai Fong). We also have a pop-up in Mong Kok on weekends. See the Visit section for hours and directions.
+      </div>
+    </div>
+  </div>
 
-                <!-- Q3 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      Can I order ahead or get delivery?
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                      Yes — order ahead using our app (iOS & Android) or through local delivery partners. Pickup times are typically within 10–15 minutes during off-peak hours.
-                    </div>
-                  </div>
-                </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" data-key="faqQ3">
+        Can I order ahead or get delivery?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+      <div class="accordion-body" data-key="faqA3">
+        Yes — order ahead using our app (iOS & Android) or through local delivery partners. Pickup times are typically within 10–15 minutes during off-peak hours.
+      </div>
+    </div>
+  </div>
 
-                <!-- Q4 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Do you offer espresso subscriptions or wholesale?
-                    </button>
-                  </h2>
-                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                      We offer a monthly bean subscription and limited wholesale to local cafés. Email <a href="mailto:hello@lanternbrew.hk">hello@lanternbrew.hk</a> for pricing and availability.
-                    </div>
-                  </div>
-                </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" data-key="faqQ4">
+        Do you offer espresso subscriptions or wholesale?
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+      <div class="accordion-body" data-key="faqA4">
+        We offer a monthly bean subscription and limited wholesale to local cafés. Email <a href="mailto:hello@lanternbrew.hk">hello@lanternbrew.hk</a> for pricing and availability.
+      </div>
+    </div>
+  </div>
 
-                <!-- Q5 -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      Are you family / pet friendly?
-                    </button>
-                  </h2>
-                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                      Our Central location welcomes well-behaved children. Pets are welcome at outdoor seating only.
-                    </div>
-                  </div>
-                </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" data-key="faqQ5">
+        Are you family / pet friendly?
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+      <div class="accordion-body" data-key="faqA5">
+        Our Central location welcomes well-behaved children. Pets are welcome at outdoor seating only.
+      </div>
+    </div>
+  </div>
 
-              </div>
+</div>
+
 
               <hr>
               <p class="small text-muted">Last updated: 2025-11-05</p>
