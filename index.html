@@ -1,0 +1,219 @@
+<!--I am going to use bootstrap 5. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lantern Brew — FAQ</title>
+    <meta name="description" content="Frequently asked questions for Lantern Brew — a cozy specialty coffee shop in Hong Kong.">
+
+    <!-- Bootstrap 5 CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="FAQ.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+            <rect width="24" height="24" rx="6" fill="#6B3F2F" />
+            <path d="M7 13c1.5-3 5-3 6 0" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="ms-2">Lantern Brew</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#visit">Visit Us</a></li>
+            <li class="nav-item"><a class="btn btn-outline-primary ms-2" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="hero py-5">
+      <div class="hero-overlay py-5">
+        <div class="container py-5 text-center">
+          <h1 class="display-6 fw-bold">Lantern Brew — Frequently Asked Questions</h1>
+          <p class="lead mt-2">Everything you need to know about our coffee, ordering options, and our Hong Kong locations.</p>
+          <a href="#faq" class="btn btn-lg btn-light mt-3">Jump to FAQ</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container my-5">
+      <div class="row gy-4">
+
+        <section class="col-lg-8" id="faq">
+          <div class="card faq-card shadow-sm p-3">
+            <div class="card-body">
+              <h2 class="h4 brand">Common Questions</h2>
+              <p class="text-muted">If you don't find your answer here, reach out via the contact form.</p>
+
+              <div class="accordion" id="faqAccordion">
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Do you offer plant-based milk alternatives?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Yes — we carry oat, almond, and soya milk. All substitutions are +HK$6. Ask our barista for allergy details; cross-contact with dairy is possible.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Where are you located in Hong Kong?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Our flagship store is in Central (Lan Kwai Fong). We also have a pop-up in Mong Kok on weekends. See the Visit section for hours and directions.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Can I order ahead or get delivery?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Yes — order ahead using our app (iOS & Android) or through local delivery partners. Pickup times are typically within 10–15 minutes during off-peak hours.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Do you offer espresso subscriptions or wholesale?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      We offer a monthly bean subscription and limited wholesale to local cafés. Email <a href="mailto:hello@lanternbrew.hk">hello@lanternbrew.hk</a> for pricing and availability.
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Are you family / pet friendly?
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                      Our Central location welcomes well-behaved children. Pets are welcome at outdoor seating only.
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <hr>
+              <p class="small text-muted">Last updated: 2025-11-05</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right column: Visit + Contact -->
+        <aside class="col-lg-4">
+          <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+              <h3 class="h6 brand">Visit Us</h3>
+              <p class="mb-1"><strong>Central — Flagship</strong><br>Lan Kwai Fong, Central, HK<br>Mon–Sun: 8:00 AM – 8:00 PM</p>
+              <p class="mb-0"><strong>Mong Kok — Pop-up (Weekends)</strong><br>Fa Yuen Street Market<br>Sat–Sun: 9:00 AM – 5:00 PM</p>
+              <a class="btn btn-sm btn-outline-secondary mt-3" href="https://www.google.com/maps" target="_blank" rel="noopener">Open in Maps</a>
+            </div>
+          </div>
+
+          <div class="card mb-3 shadow-sm" id="contact">
+            <div class="card-body">
+              <h3 class="h6">Contact</h3>
+             <form name="Contact" data-netlify="true">
+                <div class="mb-2">
+                  <label for="name" class="form-label small">Name</label>
+                  <input type="text" class="form-control form-control-sm" id="name" required>
+                </div>
+                <div class="mb-2">
+                  <label for="email" class="form-label small">Email</label>
+                  <input type="email" class="form-control form-control-sm" id="email" required>
+                </div>
+                <div class="mb-2">
+                  <label for="message" class="form-label small">Message</label>
+                  <textarea id="message" class="form-control form-control-sm" rows="3" required></textarea>
+                </div>
+                <button class="btn btn-primary btn-sm w-100" type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="card shadow-sm">
+            <div class="card-body small text-muted">
+              <strong>Accessibility</strong>
+              <p class="mb-0">This page uses semantic markup and Bootstrap's components for keyboard navigability. Contact us if you need larger text or other accommodations.</p>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+      <!-- Optional: more resources -->
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <p class="text-muted small">Found a mistake or want a feature? File an issue on our <a href="#">GitHub repo</a>.</p>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="py-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <small class="text-muted">© Lantern Brew Hong Kong</small>
+        <div>
+          <a class="text-muted small me-3" href="#">Privacy</a>
+          <a class="text-muted small" href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (bundle includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      (function(){
+        'use strict'
+        const form = document.getElementById('contactForm')
+        form.addEventListener('submit', function(event){
+          if(!form.checkValidity()){
+            event.preventDefault();
+            event.stopPropagation();
+            form.classList.add('was-validated')
+            return;
+          }
+          event.preventDefault();
+          // In a real project you'd POST to an API. Here we simulate success.
+          alert('Thanks! We will reply to you shortly.');
+          form.reset();
+        })
+      })()
+    </script>
+  </body>
+</html>
